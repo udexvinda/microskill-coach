@@ -1,21 +1,21 @@
-# Streamlit Cloud compatible pins
-streamlit==1.39.0
+# Streamlit Cloud friendly (prebuilt wheels; avoids source builds)
 
-# Data & math
-pandas==2.2.3
-numpy==2.1.2
+streamlit>=1.38,<1.41
 
-# Charts (radar) – pulls pillow as a dep
-matplotlib==3.9.2
-pillow==12.0.0
+# Data stack (pandas 2.2 needs numpy >=1.26; keep <2 to avoid edge wheels)
+pandas>=2.2,<2.3
+numpy>=1.26,<2.0
 
-# PDF text extraction
-pypdf==5.0.1
+# Charts (pulls pillow automatically; keep <3.10 to avoid bleeding edge)
+matplotlib>=3.8,<3.10
+pillow>=10,<13
+
+# PDF text
+pypdf>=5,<6
 
 # OpenAI (new SDK)
-openai==1.51.0
+openai>=1.45,<2
 
-# Optional quality-of-life
-tabulate==0.9.0
-requests==2.32.3
-tqdm==4.66.5
+# Light QoL (optional; safe)
+requests>=2.31,<3
+tqdm>=4.66,<5
