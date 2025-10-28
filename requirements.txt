@@ -1,0 +1,21 @@
+# Streamlit Cloud compatible pins
+streamlit==1.39.0
+
+# Data & math
+pandas==2.2.3
+numpy==2.1.2
+
+# Charts (radar) – pulls pillow as a dep
+matplotlib==3.9.2
+pillow==12.0.0
+
+# PDF text extraction
+pypdf==5.0.1
+
+# OpenAI (new SDK)
+openai==1.51.0
+
+# Optional quality-of-life
+tabulate==0.9.0
+requests==2.32.3
+tqdm==4.66.5
